@@ -1,4 +1,4 @@
-package ForDemos;
+package loops;
 
 public class SingleForLoop {
 

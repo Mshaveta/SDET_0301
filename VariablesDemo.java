@@ -1,3 +1,4 @@
+package SDET_0301;
 class VarDemo{
 	 
 	//JVM starts execution from here

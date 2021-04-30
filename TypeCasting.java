@@ -1,3 +1,4 @@
+package SDET_0301;
 public class TypeCasting{
 	public static void main(String[] args){
 		byte b=125;//1byte- 8 bits-1 space-01

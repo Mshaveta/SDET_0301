@@ -1,3 +1,4 @@
+package SDET_0301;
 //AND-  username | password
 		//(username or email)  AND (pwd OR DOB)
 		//comparison opt.
@@ -16,15 +17,7 @@ public class LadderElseIfORDemo {
 		 int b=200;
 		 
 		 if(a==b || a<b) { //100 == 200- false || 100<200- true
-			 
-			 
-			 if(a==b) {
-				 
-			 }
-			 if(a<b) {
-				 
-			 }
-			 System.out.println("if part");//S1
+			 System.out.println("if part");
 		 }else if(a==b || a<b){ //100==200-false || 100<200- true
 			 System.out.println("else if part");
 		 }else {

@@ -1,3 +1,4 @@
+package SDET_0301;
 /*
 1. Sum of digits- 123 - 1+2+3= 6
 2. reverse of a anumber--234 --432

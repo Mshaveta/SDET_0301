@@ -1,3 +1,4 @@
+package SDET_0301;
 public class Operators{
 	public static void main(String[] args){
 		/* int a=10;//a=10--> 11-->12
@@ -75,7 +76,7 @@ public class Operators{
 		
 		
 		a=b;//Assiging the value of b -20to a //a=20
-		b=temp//Assiging the value of temp to b//10
+		//b=temp//Assiging the value of temp to b//10
 		
 		System.out.println("After Swapping-"+a+","+b); //
 		 
