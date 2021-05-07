@@ -1,4 +1,4 @@
-package loops;
+package SDET_0301.LoopDemos;
 
 public class SingleForLoop {
 
