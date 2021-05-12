@@ -8,7 +8,7 @@ public class ArrayBasics {
 		// Array Declaration
 		// <dataType>[] var_name = new DT[size of an array]
 		int[] arr = new int[20];// object -- Heap M/m - objects--0-4
-		System.out.println(arr);
+		System.out.println(arr);//[I@15db9742
 		// System.out.println(arr);//[I@m/m addr.//[I@1db9742
 		// System.out.println(arr[4]);//0
 		// System.out.println(arr[1]);//0
