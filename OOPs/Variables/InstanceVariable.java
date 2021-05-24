@@ -19,25 +19,25 @@ public class InstanceVariable {
 
 	int a;// property/fiedl/data member/instance variable
 
-	//static area/method -class level
+	// static area/method -class level
 	public static void main(String[] args) {
-
+		 
 		// creating an object of class
 		InstanceVariable obj = new InstanceVariable();
-		//System.out.println(obj.a);
-		obj.a=100;
-		System.out.println(obj.a);//accessing the prop of class with the help of object
-		
+		// System.out.println(obj.a);
+		obj.a = 100;
+		System.out.println(obj.a);// accessing the prop of class with the help of object
+
 		InstanceVariable obj1 = new InstanceVariable();
-		obj1.a=890;
+		obj1.a = 890;
 		System.out.println(obj1.a);
-		
+
 		InstanceVariable obj2 = new InstanceVariable();
 		System.out.println(obj2.a);
-		
+
 		InstanceVariable obj3 = new InstanceVariable();
 		System.out.println(obj3.a);
-		
+
 	}
 
 }

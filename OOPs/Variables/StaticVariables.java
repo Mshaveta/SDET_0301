@@ -25,9 +25,11 @@ public class StaticVariables {
 	static int z;
 
 	public static void main(String[] args) {
-//		 System.out.println(StaticVariables.y);
+		 System.out.println(StaticVariables.y);
 //		 //or
-//		 System.out.println(z);
+		 System.out.println(z);
+		 
+		 
 		StaticVariables so1 = new StaticVariables();
 		StaticVariables so2 = new StaticVariables();
 		StaticVariables so3 = new StaticVariables();
