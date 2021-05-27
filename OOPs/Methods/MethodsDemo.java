@@ -33,11 +33,6 @@ public class MethodsDemo {
 		System.out.println(md.a);//inst var
 		
 		
-		
-		
-		
-		
-		
 		MethodsDemo md1 = new MethodsDemo();// a=0
 
 		md.a = 100;// 0-->100
