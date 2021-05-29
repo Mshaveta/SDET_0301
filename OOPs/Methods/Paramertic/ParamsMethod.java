@@ -17,24 +17,22 @@ public class ParamsMethod {
 //	}
 
 	public static void verifyTitle(String expttl, String actTl) {
-		 
 
 		// null == null
 		// null// can't compare with string equals method
-		//if (expectedTitle != null) {
+		// if (expectedTitle != null) {
 //			if (expectedTitle.equals(actualTitle)) { // null == null
 //				System.out.println("Title Matched!");
 //			} else {
 //				System.out.println("not Matched!");
 //			}
 //	//	}
-		
+
 		if (expttl.equals(actTl)) { // null == null
 			System.out.println("Title Matched!");
 		} else {
 			System.out.println("not Matched!");
 		}
-
 
 	}
 
