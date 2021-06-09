@@ -30,7 +30,7 @@ public class DuplicateChrDemo {
 		for (int i = 0; i < str.length(); i++) {
 			//i=0---j
 			char ch = str.charAt(i);//i=0---j,i=1=a,i=2=a//
- 			 
+ 			 //if char is not present in the string
 			if (newStr1.indexOf(ch) == -1) {// 1 ==-1
 				newStr1 =newStr1+ ch;//jav
 			}
