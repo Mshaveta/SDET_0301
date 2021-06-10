@@ -5,7 +5,7 @@ public class ParentConst {
 	String b;//null
 	
 	public ParentConst(int a) {
-		this();
+		//this();
 		System.out.println("ParentConst-" + a);//
 	}
 

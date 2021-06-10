@@ -1,0 +1,68 @@
+Scenario: non-param const
+-----------------------------------
+
+Case1: Parent class having one const, and child having no const.
+it will call the const of parent class
+
+CASE2: Parent class having NO const, and child having OnE const.
+it will call the const of child class
+
+Case3: Parent class having one const, and child having OnE const.
+it will call the const of parent class first, then const of child class
+
+----------------------------------------------------------------------
+Scenario2: param. const
+-----------------------------
+
+Case1: parent class having no const, child having param. const.
+call the param const of child class
+
+imp.- Case2: parent class having param const, child having no const.
+compilation Error--> at the className
+
+
+imp.- Case3: parent class having param const, child having default - non param. const.
+Compi error at const name
+
+imp.- Case4: parent class having param const, child having param. const.
+Compi error at const name
+
+
+Sol: we need to call the parent class param. const using super(val) in the child class const
+---------------------------------------------------------------------------------------
+
+Scenario3: with two consts, param, -- const . overloading in inhertance
+----------
+Case1:
+Parent clASS  having one param and non param. and child having one non param const, 
+it will call the const of parent class fitrst then child class const.
+
+A--m1
+|
+m1,B-m2--super
+|
+m1,m2-C-m3
+super();//B  class const
+
+Parent A{}
+Parent B extends A{
+}
+
+parent C extends B{
+//A,B,C
+}
+-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
