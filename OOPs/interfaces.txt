@@ -1,0 +1,70 @@
+1. I extends I
+2. C extends C
+3. C implements I
+
+---------------------
+1. static methods
+I1, class-- I1.m1();
+
+2/ I1 - m1(), I2-m1(), class A----> I1.m1(),I2.m1()
+3. I1 - m1(), I2-m2(), class A----> I1.m1(),I2.m2()
+4. I1- static m1() , I2 extends i1 { static m1()}
+---------------------------------------------------
+
+deafult Methods:
+1. I1 -  default method- m1(){}
+class A implements I1{
+// access the method with the ovbj of class in sttaic area
+}
+
+2. I1 -default m1 , class - non static method - m2(){ // call the m1 directly}
+3. with interfaces with diff. methods name and class imp I1, i2
+
+4. I1 - dfeauklt m1() {}
+I2- default m1(){}
+clas A imp I1,I2{
+
+publiv void m1(){
+I1. super.m1();
+}
+}
+
+
+class parent{ //m1(){ //S1}
+}
+class child extends parent{
+//m1(){ super.m1}
+main(){
+obj.m1();
+}
+} 
+
+
+---------------------------------
+
+A{
+m1(){}
+
+}
+B extends A{
+m1(){
+//super.m1();// calling method classA
+}
+}
+
+C extends B{
+m1(){
+super.m1();///method of classB
+}
+}
+-----------------------------------------------------
+classA -- static m1(){}
+classB extends ClassA{
+ non sttaic m1(); // comp. error
+}
+
+--------------
+I1- sttaic m1();
+class impl. I1{
+non sttaic method m1()---overriding
+}
