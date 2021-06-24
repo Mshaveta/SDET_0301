@@ -1,0 +1,313 @@
+Multiple Inherti.
+
+A-m1 B-m1
+ |
+ C extends A,B{
+}
+
+
+Parent--m1(){}
+child- m1(){}
+
+c = new C();
+super.m1();
+===================================
+JDK - 1.7
+----------------------
+C extends C
+C implemenets I
+I Extends I
+----------------------
+Case 1: C implements I
+-----------------------
+interface I1{
+}
+class A implements I1{
+
+public void m1(){
+}
+
+===================================
+S2:multiple Imnhertinace
+-------------------------
+
+Class A impl I1,I2{
+}
+
+
+=================================
+class--method decl.-m1();
+
+
+interface Automation-100, 5---m1();
+Tetsing-100- 3---m1();
+JAVA -50 - 10--m1();
+
+API testing---API concepts extends Automation , Testing , JAVA
+m1(){
+//
+}
+
+
+interface I1{
+m1();
+}
+interface I2{
+m2();
+}
+
+class A impl I1, I2{
+
+m1(){
+}
+
+ m2(){
+}
+
+}
+
+
+=======================================
+S3: 
+
+I1{
+m1();
+}
+
+I2 extends I1{
+m2();
+}
+
+Class A implements I2 {
+m1(){
+}
+
+m2(){
+}
+
+}
+
+
+=========================
+A-I1 B-I2
+ |
+ C impl I1,I2--abstract 
+ |
+D extends C E extends C
+
+============================================
+Abstract Class: Herih. inthert.
+may contains abst. and non abst. methods
+use abstract keyword while method declaration
+prop-nonstatic/ not final
+
+can't create an object of class bt can create reference
+
+till JDK 1.7
+Interface: Multiple inherti.
+only abstract methods
+no need to use abstract keyword
+bydefault prop- static final
+
+can't create an object of class bt can create reference
+=======================================================================
+JDK 8- Interfaces New features:
+
+intefraces we can create non abstract methods-----can provide method def. by using two keywords- static,default (non static method)
+-------------------------------------------------------------------------
+Scenario1:interface static method
+----------
+Case 1: Single interface having static method, no class
+how we can access:---- with the interface name
+
+-------------------------------------------------------------
+case 2: 1 class and 1 interface having only static method
+, there is no need to implememt that interface , canncall the method directly by using interface name
+--------------------------------------------------------------
+case 3: 1 class and 1 interface having static method and abstract method
+, mandatory to implememt that interface and need to provide the method def. to abstract method of an interface,  
+can access static method by interface name
+abstract method with the object of class/ complex object
+----------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+Scenario 2:  Single class and Two interfaces:
+---------------------------------------------
+Case 1: both interfaces having same static method (method def.) 
+Case 2: both interfaces having diff static methods
+Case 3: I2 extends I1
+Class A implements I2
+
+-------------------------------------------------------------------------
+Scenario3: Default concept:
+-----------------------------
+Case 1: single class and single interface
+--------------------------------------
+I1- default method
+class imp i1
+can access deafult method using object of class / complex object
+================================================================
+Case 2: single class and two interfaces with diff. default methods name
+------------------------------------------------------------------------
+Case3: single class and two interfaces with same default methods name
+class has to override the method  and can access the default methods using :
+InetrfaceName1.super.methodName();
+InetrfaceName2.super.methodName();
+----------------------------------------------------------------------------
+Case4: I2 extends I1  having same default methods
+Class imp I2{
+// we can access only I2 method
+//bt to access the method if I1 , we can use I1.super.m() in one of the methods of an interface2
+
+}
+
+
+
+======================================================================
+abstract();, static (){}, default (){}
+==========================================
+1. I1{ 
+m1(); 
+static m2(){}
+default m3(){}
+}
+
+class A imp I1{
+
+m1(){
+}
+main(){
+I1.m2();
+a.m3();
+
+}
+
+}
+
+===============================
+2. I1{ 
+
+m1(); 
+static m2(){}
+default m3(){} 
+
+}
+
+I2{
+m4(); 
+static m5(){}
+default m6(){} 
+
+}
+Class imp I1, I2{
+@override
+m1(){}
+m4(){}
+
+//call static method
+I1.m2();
+I2.m5();
+
+//default
+obj.m6();
+obj.m3();
+
+}
+------------------------------
+with same methods name:
+---------------------------
+I1{ 
+
+m1(); 
+static m2(){}
+default m3(){} 
+
+}
+   I2{
+m1(); 
+static m2(){}
+default m3(){} 
+
+
+}
+Class imp I1, I2{
+@override
+m1(){}
+ 
+
+//call static method
+I1.m2();
+I2.m2();
+
+//default
+ public void m3(){
+ I1.super.m3();
+ I2.super.m3();
+}
+
+}
+
+
+
+==============================
+3. 
+
+same methods name
+---------------------
+I1{ 
+m1(); 
+static m2(){}//I1.m2
+default m3(){//S1} 
+
+}
+
+I2 extends I1{
+
+ m1();
+static m2(){}//I2.m2
+@override
+default m3(){//S2
+
+I1.super.m3();} 
+}
+
+
+Class A imp I2,I1{
+
+m1(){
+
+m3();//I2
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
