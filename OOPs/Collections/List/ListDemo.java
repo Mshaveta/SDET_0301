@@ -3,6 +3,10 @@ package OOPs.Collections.List;
 import java.util.ArrayList;
 
 /*
+ * collection: collection framework
+ * Collection: interface
+ * Collections: class
+ * 
  * collection can store hetrogenous elmns.
  * List Interface: 
  * allows duplicate elmns
@@ -35,9 +39,11 @@ public class ListDemo {
 //		ListDemo ld4 = new ListDemo();
 //		ListDemo ld5 = new ListDemo();
 //		// Name-- String
-		ArrayList<Integer> al = new ArrayList<Integer>();
+		ArrayList<Object> al = new ArrayList<Object>();
 
 		al.add(10);
+		al.add(20);
+		al.add(20);
 		al.add(20);
 
 		ArrayList<String> al1 = new ArrayList<String>();
