@@ -17,41 +17,41 @@ import java.util.Set;
 public class HashMapDemo {
 
 	public static void main(String[] args) {
-		Map<Integer,Integer>map = new HashMap<Integer,Integer>();
-		map.put(1,100); //entry
-		map.put(4,4500);
-		map.put(5,500);
-		map.put(2,2500);
-		map.put(3,5300);
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+		map.put(4, 4500);
+		map.put(5, 500);
+		map.put(2, 2500);
+		map.put(3, 5300);
+		map.put(1, 700);
+		map.put(null, 700);
+		map.put(null, 900);
+		System.out.println(map);
+		
 		 
-		
-		
-		//way1: for Non generic Map collection
-//		Set st = map.entrySet();
-//		 
-////		Iterator itr = st.iterator();
-////		while(itr.hasNext()) {
-////			System.out.println(itr.next());
-////			
-////		}
-//	
+
+//		// way1: for Non generic Map collection
+		Set st = map.entrySet();
+		 
 //		Iterator itr = st.iterator();
-//		while(itr.hasNext()) {			 
-//			 Map.Entry me =(Map.Entry)itr.next();
-//			 System.out.println(me.getKey());
-//			 System.out.println(me.getValue());
+//		while(itr.hasNext()) {
+//			System.out.println(itr.next());
 //			
 //		}
-		
-		//way2: Generic collection
-		
-		for(Map.Entry<Integer,Integer> me : map.entrySet()) {
-			System.out.println(me.getKey() + " - " +me.getValue());
+	
+		Iterator itr = st.iterator();
+		while(itr.hasNext()) {			 
+			 Map.Entry me =(Map.Entry)itr.next();
+			 System.out.println(me.getKey());
+			 System.out.println(me.getValue());
+			
 		}
-		
-		
-	 
-		 
+
+		// way2: Generic collection
+
+		for (Map.Entry<Integer, Integer> me : map.entrySet()) {
+			System.out.println(me.getKey() + " - " + me.getValue());
+		}
 
 	}
 
